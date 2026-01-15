@@ -1,8 +1,9 @@
 [submodule "keystone-milkv"]
 	path = keystone-milkv
 	url = git@github.com:antonislouca/keystone-milkv.git
+	branch = sg2042-dev-b
 [submodule "milkv-zsbl"]
 	path = milkv-zsbl
 	url = git@github.com:antonislouca/milkv-zsbl.git
 [submodule]
-	keystone-milkv = sg2042-deb-b
+	keystone-milkv = sg2042-dev-b
