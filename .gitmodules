@@ -1,0 +1,3 @@
+[submodule "keystone-milkv"]
+	path = keystone-milkv
+	url = git@github.com:antonislouca/keystone-milkv.git
