@@ -1,0 +1,13 @@
+diff --git a/arch/riscv/boot/dts/sophgo/mango-milkv-pioneer.dts b/arch/riscv/boot/dts/sophgo/mango-milkv-pioneer.dts
+index 3e9bd7ca6793..fb0929eb1e35 100644
+--- a/arch/riscv/boot/dts/sophgo/mango-milkv-pioneer.dts
++++ b/arch/riscv/boot/dts/sophgo/mango-milkv-pioneer.dts
+@@ -164,7 +164,7 @@ map4 {
+ 	};
+ 
+ };
+ 
+ &chosen {
+-	bootargs = "console=ttyS0,115200 console=tty1 earlycon maxcpus=1";
++	bootargs = "console=ttyS0,115200 earlycon maxcpus=1";
+ };
