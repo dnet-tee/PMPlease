@@ -62,9 +62,9 @@ int __memcpy_topa(uint64_t dst, void* src, size_t count, enum flush_method fm, p
   uint64_t offset = dst % PAGE_SIZE;
 
   struct args args = {
-    .pa = dst,
     .buffer = src,
     .count = offset ? MIN(PAGE_SIZE - offset, count) : MIN(PAGE_SIZE, count),
+    .pa = dst,
     .flush = fm,
     .access_reserved = access_reserved,
   };
@@ -110,9 +110,9 @@ int __memcpy_frompa(void* dst, uint64_t src, size_t count, enum flush_method fm,
   uint64_t offset = src % PAGE_SIZE;
 
   struct args args = {
-    .pa = src,
     .buffer = dst,
     .count = offset ? MIN(PAGE_SIZE - offset, count) : MIN(PAGE_SIZE, count),
+    .pa = src,
     .flush = fm,
     .access_reserved = access_reserved,
   };

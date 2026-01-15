@@ -1,7 +1,7 @@
 all: setup-dirs kmod_readalias.ko libkmodreadlias.a 
 .PHONY: clean setup-dirs
 
-CFLAGS= -O3 -std=gnu11 -Wall -Wextra -Wpedantic -Werror
+CFLAGS= -O3 -std=gnu11 -Wall -Wextra -Wpedantic
 
 ifndef KERNEL_PATH
 $(info Using currently running kernel. Overwrite KERNEL_PATH env var to change this)
@@ -16,7 +16,7 @@ kmod_readalias.ko: kmod_readalias.c
 	make -C $(KERNEL_PATH) M=$(PWD) modules
 
 libkmodreadlias.a: readalias.c
-	gcc $(CFLAGS) -o readalias.o -c readalias.c
+	riscv64-linux-gnu-gcc $(CFLAGS) -o readalias.o -c readalias.c
 	ar rcs libkmodreadalias.a readalias.o
 clean:
 	rm -f kmod_readalias.ko
