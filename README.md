@@ -1,6 +1,6 @@
-# BadRAM: Practical Memory Aliasing Attacks on Trusted Execution Environments
+# Physical Memory Please: Practical Memory-Aliasing Attacks on RISC-V PMP
 
-This repository contains the scripts and tools to perform BadRAM attacks on RISC-V, as well as the proof-of-concept and end-to-end attacks presented in [our paper](https://uasc.cc/proceedings26/uasc26-louka.pdf) under the [keystone-milkv/examples](keystone-milkv/examples/).
+This repository contains the scripts and tools to perform BadRAM attacks on RISC-V, as well as the proof-of-concept and end-to-end attacks presented in [our paper](https://uasc.cc/proceedings26/uasc26-louka.pdf) under `keystone-milkv/examples`.
 
 ## Directory structure
 
